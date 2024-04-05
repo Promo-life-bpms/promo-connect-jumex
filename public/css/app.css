@@ -1089,6 +1089,9 @@ input:checked + .toggle-bg {
 .m-1 {
   margin: 0.25rem;
 }
+.m-10 {
+  margin: 2.5rem;
+}
 .m-2 {
   margin: 0.5rem;
 }
@@ -1097,9 +1100,6 @@ input:checked + .toggle-bg {
 }
 .m-8 {
   margin: 2rem;
-}
-.m-10 {
-  margin: 2.5rem;
 }
 .mx-2 {
   margin-left: 0.5rem;
@@ -1155,6 +1155,9 @@ input:checked + .toggle-bg {
 }
 .mb-1 {
   margin-bottom: 0.25rem;
+}
+.mb-10 {
+  margin-bottom: 2.5rem;
 }
 .mb-2 {
   margin-bottom: 0.5rem;
@@ -1253,9 +1256,6 @@ input:checked + .toggle-bg {
 }
 .mt-auto {
   margin-top: auto;
-}
-.mb-10 {
-  margin-bottom: 2.5rem;
 }
 .block {
   display: block;

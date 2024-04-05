@@ -4,12 +4,11 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="{{ asset('img/cropped-HH-Global-favicon-3-32x32.webp') }}" type="image/x-icon">
-    <link rel="shortcut icon" href="{{ asset('img/favicon.png') }}" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ asset('img/favico.png') }}" type="image/x-icon">
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>GNP</title>
+    <title>JUMEX</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
