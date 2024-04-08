@@ -9,7 +9,7 @@
             </div>
         </div>
     </div> -->
-    <div id="default-carousel" class="relative w-full text-center" data-carousel="slide" >
+  {{--   <div id="default-carousel" class="relative w-full text-center" data-carousel="slide" >
         <!-- Carousel wrapper -->
         <div class="relative h-80 overflow-hidden  md:h-[32rem] mx-auto max-w-7xl">
             @foreach ($banners as $item)
@@ -54,17 +54,24 @@
             </span>
         </button>
 
-    </div>
+    </div> --}}
 
-    <div class="container mx-auto max-w-7xl">
-        <div class="w-full bg-secondary">
-            <div class="container mx-auto max-w-7xl py-1">
-                <div class="flex justify-center">
-                    <span class="text-center text-white">PRODUCTOS MÁS VENDIDOS
-                    </span>
-                </div>
-            </div>
+    <div style="position: relative;">
+        <video class="w-full z-10" src="http://grupojumex.mx/wp-content/themes/Grupo%20Jumex%20WP%20Theme/assets/video_part_2.mp4" autoplay loop muted playsinline></video>
+        <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center;">
+            <h3 class="text-center text-white semibold" style="font-size: 40px;">Somos apasionados de la calidad y la innovación en jugos, néctares y bebidas de calidad mundial que te pueden acompañar en todos los momentos del día.</h3>
         </div>
+    </div>
+    
+
+    <div class="bg-secondary container mx-auto max-w-full py-1">
+        <div class="flex justify-center">
+            <span class="text-center text-white">PRODUCTOS MÁS VENDIDOS
+            </span>
+        </div>
+    </div>
+    <div class="container mx-auto w-full">
+        
         <div class="container mx-auto max-w-7xl py-8 bg-white ">
             <div class="flex flex-wrap justify-center">
                 @foreach ($latestProducts as $product)
@@ -74,14 +81,17 @@
                 @endforeach
             </div>
         </div>
-        <div class="w-full">
-            <div class="container mx-auto max-w-7xl py-1">
-                <div class="flex justify-center bg-secondary">
-                    <span class="text-center text-white p-1">CATEGORÍAS
-                    </span>
-                </div>
+
+
+    </div>
+        <div class="container mx-auto max-w-full py-1">
+            <div class="flex justify-center bg-secondary">
+                <span class="text-center text-white p-1">CATEGORÍAS
+                </span>
             </div>
         </div>
+        
+    <div class="container mx-auto w-full">
         <div class="container mx-auto max-w-7xl py-8 px-4">
             <div class="flex flex-wrap justify-center">
 
@@ -129,6 +139,7 @@
 
             </div>
         </div>
+    </div>
         <div class="w-full bg-secondary">
             <div class="container mx-auto max-w-7xl py-1">
                 <div class="flex justify-center">
@@ -137,6 +148,8 @@
                 </div>
             </div>
         </div>
+
+    <div class="container mx-auto w-full">
         <div class="container mx-auto max-w-7xl py-8 ">
             <div class="flex flex-wrap justify-center">
                 @foreach ($moreProducts as $product)
@@ -152,6 +165,8 @@
                 @endforeach
             </div>
         </div>
+    </div>
+    <div class="container mx-auto w-full">
         <div class="container max-w-7xl">
             <div class="relative overflow-hidden  text-center">
                 <img class="h-auto w-full" src="{{ asset('img/banner-anahuac.png') }}" alt="">

@@ -1,4 +1,4 @@
-<div class="relative text-gray-600 focus-within:text-gray-400" >
+<div class="relative text-gray-600 focus-within:text-gray-400 mt-4" >
     <input type="search" wire:model="search" wire:keydown.enter="buscar"
         class="border-2 border-orange-500 py-2 text-sm bg-white rounded pr-10 pl-4 focus:outline-none focus:bg-white focus:text-orange-600 w-full"
         placeholder="Buscar" autocomplete="off">

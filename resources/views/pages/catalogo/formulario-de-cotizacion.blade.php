@@ -205,13 +205,13 @@
 
                                     <div class="grid grid-cols-3 gap-4">
                                         <select id="logos" name="logos" class=" mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" style="width: 210px;">
-                                            <option value="Logo_GNP.png">LOGO GNP</option>
-                                            <option value="vivir_orange.png">VIVIR  NARANJA</option>
+                                            <option value="jumex_logo.png">LOGO JUMEX</option>
+                                            <option value="jumex_bn.png">VIVIR JUMEX B/N</option>
                                         </select>
                                     </div>
-                                    
+                                    <p class="inline-block cursor-pointer transition duration-300 ease-in-out text-stone-700 " id="clearImage">Limpiar imagen</p>
                                     <br>
-                                    
+                                    <br>
                                    {{--  <input type="file"
                                         class="block w-full text-sm text-slate-500 bg-violet-50
                                             file:rounded-full
@@ -219,7 +219,6 @@
                                             file:text-sm file:font-semibold mt-2"
                                         wire:model="photo" accept="image/*" id="imageInput" > --}}
                                         
-                                        <p class="inline-block cursor-pointer transition duration-300 ease-in-out text-stone-700 " id="clearImage" style="display:none;">Limpiar imagen</p>
                                         
                                       
                                         <p class="text-base font-bold">Texto  (opcional) </p>
@@ -383,8 +382,8 @@
         var productID = "{{ $product->id }}";
 
         /* Logos */
-        var logo1 = "{{asset('img/Logo_GNP.png')}}";
-        var logo2 = "{{asset('img/vivir_orange.png')}}";
+        var logo1 = "{{asset('img/jumex_logo.png')}}";
+        var logo2 = "{{asset('img/jumex_bn.png')}}";
 
         if(imageURL.startsWith("https://catalogodeproductos.promolife.lat/")){
             imageURL = imageURL.slice(41);
@@ -461,7 +460,7 @@
 
 
             /* Evento para agregar imagenes desde input (deshabilitado si no esta el boton de logo personalizado) */
-           /*  imageInput.addEventListener("change", function (event) {
+            /* imageInput.addEventListener("change", function (event) {
                 var file = event.target.files[0];
                 document.getElementById('clearImage').style.display = 'block';
                 if (file) {
@@ -482,8 +481,8 @@
                     };
                     reader.readAsDataURL(file);
                 }
-            });
- */
+            }); */
+ 
                       
 
             /* Evento para agregar texto */
@@ -518,7 +517,7 @@
             var resultImage = document.getElementById("resultImage");
             var showGeneratedImage = document.getElementById("showGeneratedImage");
             document.getElementById('clearImage').addEventListener('click', function() {
-                canvas.remove(selectedImage);
+                canvas.remove(selectedImageLogo);
             });
             document.getElementById('clearText').addEventListener('click', function() {
                 canvas.remove(textObject);
