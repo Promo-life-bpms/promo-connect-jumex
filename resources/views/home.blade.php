@@ -57,7 +57,7 @@
     </div> --}}
 
     <div style="position: relative;">
-        <video class="w-full z-10" src="http://grupojumex.mx/wp-content/themes/Grupo%20Jumex%20WP%20Theme/assets/video_part_2.mp4" autoplay loop muted playsinline></video>
+        <video class="w-full z-10" style="margin-top: -38px;" src="http://grupojumex.mx/wp-content/themes/Grupo%20Jumex%20WP%20Theme/assets/video_part_2.mp4" autoplay loop muted playsinline></video>
         <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center;">
             <h3 class="text-center text-white semibold" style="font-size: 40px;">Somos apasionados de la calidad y la innovación en jugos, néctares y bebidas de calidad mundial que te pueden acompañar en todos los momentos del día.</h3>
         </div>
